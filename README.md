@@ -1,0 +1,2 @@
+# RareAlgo
+Some interesting algorithm
