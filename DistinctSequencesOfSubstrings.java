@@ -44,17 +44,6 @@ public class DistinctSequencesOfSubstrings{
 	        List<RepeatedChar> S = reformS(s,t);
 	        List<RepeatedChar> T = reformT(t);
 	        
-	        for( RepeatedChar x:S){
-	        	System.out.print( x.ch);
-	        	System.out.print( x.t+",");
-	        }
-	        System.out.println();
-	        for( RepeatedChar x:T){
-	        	System.out.print( x.ch);
-	        	System.out.print(x.t+",");
-	        }
-	        System.out.println();
-	        
 	        int[] dp = new int[T.size()];
 	        if( S.get(0).ch==T.get(0).ch && S.get(0).t>=T.get(0).t )
 	        	dp[0] = 1+S.get(0).t-T.get(0).t;
