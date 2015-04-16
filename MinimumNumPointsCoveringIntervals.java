@@ -1,17 +1,21 @@
-/*activities: 
+/*Given a list of activities: 
 {
     1,5
-    2,4
-    3,10
     5,6
+    3,10
+    6,7
+    4,5
+    2,4
 }
-where for each row, the first number represents the starting time and the second one represents the ending time.
+where for each row, the first number represents the starting time and the second one represents the ending time of an activity.
 
-Require to return one possible combination of select points, which guarantees all activities are visited, e.g.,
+Require to return one possible combination with minimum of visiting time points, such that all activities are visited
+
+A possible solution to the given example is
 {
-    4, 5
+    4, 6
 }
-such that the first 3 activity can be check at time 4, and last one at time 5
+such that the activites (1,5)(3,10)(4,5)(2,4) can be checked at time 4, and (5,6)(3,10)(6,7) are at time 6.
 */
 
 public class MinimumCheckPointsCoveringAllIntervals{
