@@ -1,3 +1,11 @@
+/*
+Check if there is only one connected-component with all elements equal to 0. 
+
+Takes only O(1) space complexity while the time complexity can be more. Trick: gain space at cost of time.
+
+Visiting: anti-clock wise, visited: clock-wise
+*/
+
 public class numberOfIslands_200{//connected components
 		numberOfIslands_200(){}
 		
